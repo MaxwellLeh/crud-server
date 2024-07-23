@@ -12,7 +12,8 @@ fruitRouter.post("/", fruits.create);
 // update -PATCH - update
 fruitRouter.patch("/:name", fruits.update)
 // delete - DELETE - destroy
-router.delete("/:name", fruits.destroy);
+fruitRouter.delete("/:name", fruits.destroy);
+
 module.exports = fruitRouter;
 
 // need fruits.js and fruit.js, index.js, apps

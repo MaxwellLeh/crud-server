@@ -1,7 +1,7 @@
 // Initalisation of the server, with app.js
 // reformatting from fruitExplained.js
-
-const port = 3000;
+require('dotenv').config()
+const port = process.env.PORT || 5000
 const app = require("./app");
 
 app.listen(port, () => {
