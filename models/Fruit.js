@@ -47,6 +47,19 @@ class Fruit {
       throw "fruit not found";
     }
   }
+
+
+  destroy() {
+    const deletedFruit = fruits.find(fruit => fruit.name.toLowerCase() === this.name.toLowerCase());
+  
+    if (deletedFruit) {
+      const index = fruits.indexOf(deletedFruit);
+      fruits.splice(index, 1);
+    } else {
+      throw "Quote not found";
+    }
+};
+
 }
 
 module.exports = Fruit;
